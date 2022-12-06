@@ -15,12 +15,12 @@ The api will return a json object with the following attributes of the product:
 - [ ] pic_url
 - [ ] description
 
+if the product id is invalid return "400 bad request"
+
 ### Second task
 
 When receiving a single product you should also connect to a service with url https://8yjme.mocklab.io/api/coupon/$PID.
-This
-api receives a GET request with one parameter called productId taken from product object, and returns an 8 characters
-String as a coupon.
+This api receives a GET request as described above, and returns an 8 character coupon code.
 You need to add this coupon to the response sent in the first task. so the response will include
 
 - [ ] name
