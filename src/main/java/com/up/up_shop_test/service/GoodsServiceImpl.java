@@ -1,7 +1,7 @@
 package com.up.up_shop_test.service;
 
 import com.up.up_shop_test.dto.GoodsShotDto;
-import com.up.up_shop_test.model.Goods;
+import com.up.up_shop_test.model.Good;
 import com.up.up_shop_test.repository.GoodsRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 @Service
 @RequiredArgsConstructor
-public class GoodsServiceImpl implements GoodService{
+public class GoodsServiceImpl implements GoodsService {
 
     private final GoodsRepository repository;
     private final ModelMapper mapper;
@@ -22,7 +22,7 @@ public class GoodsServiceImpl implements GoodService{
     @Override
     public List<GoodsShotDto> getAllGoods() {
 
-        List<Goods> goodsList = repository.findAll();
+        List<Good> goodsList = repository.findAll();
 
         return  goodsList.stream()
                 .map(entity -> mapper.map(entity, GoodsShotDto.class))

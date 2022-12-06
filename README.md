@@ -2,7 +2,7 @@
 
 ## up_shop_test
 
-You have an API endpoint that returns of listings from the data provided:
+You have an API endpoint that returns a list of goods from the data provided:
 <em>“/api/goods”</em>
 
 You have to add one endpoint:

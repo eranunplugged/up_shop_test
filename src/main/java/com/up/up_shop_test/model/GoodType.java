@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Data
 @Document("goods_type")
-public class GoodsType {
+public class GoodType {
         @Id
         private String id;
         private String type;

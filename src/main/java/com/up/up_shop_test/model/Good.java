@@ -16,7 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @NoArgsConstructor
 @Data
 @Document("goods")
-public class Goods {
+public class Good {
 
         @Id String id;
         private String name;
@@ -25,7 +25,7 @@ public class Goods {
         @Field("url_pic")
         private String urlPic;
         @DBRef
-        private GoodsType type;
+        private GoodType type;
 
 }
 
