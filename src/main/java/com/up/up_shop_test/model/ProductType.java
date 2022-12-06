@@ -9,8 +9,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Document("goods_type")
-public class GoodType {
+@Document("product_type")
+public class ProductType {
         @Id
         private String id;
         private String type;

@@ -15,17 +15,18 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Document("goods")
-public class Good {
+@Document("products")
+public class Product {
 
-        @Id String id;
-        private String name;
-        private Long price;
-        private String description;
-        @Field("url_pic")
-        private String urlPic;
-        @DBRef
-        private GoodType type;
+    @Id
+    String id;
+    private String name;
+    private Long price;
+    private String description;
+    @Field("url_pic")
+    private String urlPic;
+    @DBRef
+    private ProductType type;
 
 }
 
