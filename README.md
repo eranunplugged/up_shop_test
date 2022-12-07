@@ -23,6 +23,8 @@ When receiving a single product you should also connect to a service with url ht
 This api receives a GET request as described above, and returns an 8 character coupon code.
 You need to add this coupon to the response sent in the first task. so the response will include
 
+* Advice - Use RestTemplate
+
 - [ ] name
 - [ ] price
 - [ ] pic_url

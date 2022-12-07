@@ -17,12 +17,12 @@ import java.util.List;
 @RequestMapping("/api/product")
 public class ProductController {
 
-    private final ProductService goodService;
+    private final ProductService productService;
 
     @GetMapping
     public List<ProductShortDto> getAllProducts() {
 
-        return goodService.getAllProducts();
+        return productService.getAllProducts();
     }
 
 }
