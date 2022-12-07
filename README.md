@@ -2,21 +2,37 @@
 
 ## up_shop_test
 
-You have an API endpoint that returns of listings from the data provided:
-<em>“/api/goods”</em>
+You have an API endpoint that returns a list of products from the database provided:
+<em>“/api/product”</em>
 
-You have to add one endpoint:
+### First task
 
-- [ ] Receive product by id;
-- [ ] add class coupon with fields couponCode and description
-- [ ] Save it to database
-- [ ] Make Rest template request  to receive this coupon
-- [ ] Return coupon;
-- [ ] Add unit tests;
+You have to create an endpoint that will receive a product by id and return only one product.
+The api will return a json object with the following attributes of the product:
 
+- [ ] name
+- [ ] price
+- [ ] pic_url
+- [ ] description
 
-<p>The <strong>GET</strong> request should be direct to abstract "Gold" service and should receive object Coupon, by price</p>
-<p>Path: <em>"api/coupon"</em></p>
+if the product id is invalid return "400 bad request"
+
+### Second task
+
+When receiving a single product you should also connect to a service with url https://8yjme.mocklab.io/api/coupon/$PID.
+This api receives a GET request as described above, and returns an 8 character coupon code.
+You need to add this coupon to the response sent in the first task. so the response will include
+
+- [ ] name
+- [ ] price
+- [ ] pic_url
+- [ ] description
+- [ ] coupon
+
+### Third task
+
+Add unit tests to all the methods you created.
+
 <p>Don't need to upload database The service just need to compile</p>
 
 ## Project stack

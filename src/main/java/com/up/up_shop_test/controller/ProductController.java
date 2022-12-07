@@ -1,10 +1,9 @@
 package com.up.up_shop_test.controller;
 
-import com.up.up_shop_test.dto.GoodsShotDto;
-import com.up.up_shop_test.service.GoodService;
+import com.up.up_shop_test.dto.ProductShortDto;
+import com.up.up_shop_test.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,15 +14,15 @@ import java.util.List;
  */
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/goods")
-public class GoodsController {
+@RequestMapping("/api/product")
+public class ProductController {
 
-    private final GoodService goodService;
+    private final ProductService goodService;
 
     @GetMapping
-    public List<GoodsShotDto> getAllGoods() {
+    public List<ProductShortDto> getAllProducts() {
 
-       return goodService.getAllGoods();
+        return goodService.getAllProducts();
     }
 
 }
