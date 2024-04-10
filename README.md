@@ -19,7 +19,7 @@ if the product id is invalid return "400 bad request"
 
 ### Second task
 
-When receiving a single product you should also connect to a service with url https://8yjme.mocklab.io/api/coupon/$PID.
+When receiving a single product you should also connect to a service with url https://up-coupons.wiremockapi.cloud/coupons/new.
 This api receives a GET request as described above, and returns an 8 character coupon code.
 You need to add this coupon to the response sent in the first task. so the response will include
 
